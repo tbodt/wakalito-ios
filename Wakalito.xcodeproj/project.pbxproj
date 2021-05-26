@@ -19,6 +19,7 @@
 		4C5F6D1D24C6980A00C2F149 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6D1C24C6980A00C2F149 /* KeyboardViewController.swift */; };
 		4C5F6D2124C6980A00C2F149 /* ilo sitelen.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5F6D2724C69DE900C2F149 /* keyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6D2624C69DE900C2F149 /* keyboardView.xib */; };
+		BBC076E3265EB34F007C46B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC076E3265EB34F007C46B8 /* Assets.xcassets in Resources */,
 				4C5F6D2724C69DE900C2F149 /* keyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

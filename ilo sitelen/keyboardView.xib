@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="wakalito" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="ilo_sitelen" customModuleProvider="target">
             <connections>
                 <outlet property="deleteButton" destination="AFm-EM-bLA" id="eme-vV-U9w"/>
                 <outlet property="nextKeyboardButton" destination="T0A-r8-Mgm" id="rDp-hZ-0Qr"/>
@@ -29,60 +29,60 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-ms-CxO">
                             <rect key="frame" x="0.0" y="0.0" width="312" height="55.5"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-sQ-Rt1" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-sQ-Rt1" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="[">
+                                    <state key="normal" image="op_br">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="opbrPressed:" destination="-1" eventType="touchUpInside" id="SUI-2f-hIM"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psm-Xn-3kP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psm-Xn-3kP" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="|">
+                                    <state key="normal" image="vert">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="vertPressed:" destination="-1" eventType="touchUpInside" id="EaG-DK-HaS"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn5-XN-uOS" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn5-XN-uOS" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="–">
+                                    <state key="normal" image="hor">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="horPressed:" destination="-1" eventType="touchUpInside" id="9WC-sk-VL4"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-FO-xJU" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-FO-xJU" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="ᴗ">
+                                    <state key="normal" image="pona">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="ponaPressed:" destination="-1" eventType="touchUpInside" id="pwp-xr-H4g"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-sM-rcP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-sM-rcP" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="ᴖ">
+                                    <state key="normal" image="ike">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="ikePressed:" destination="-1" eventType="touchUpInside" id="Bh1-g4-ak8"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-5X-LDt" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-5X-LDt" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title=".">
+                                    <state key="normal" image="dot">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
@@ -101,60 +101,60 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-Y4-Hra">
                             <rect key="frame" x="0.0" y="63.5" width="312" height="55.5"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-41-DUP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-41-DUP" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="]">
+                                    <state key="normal" image="cl_br">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="clbrPressed:" destination="-1" eventType="touchUpInside" id="GLo-wG-0Ca"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh7-xz-es5" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh7-xz-es5" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="⨆">
+                                    <state key="normal" image="poki">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="pokiPressed:" destination="-1" eventType="touchUpInside" id="TPP-tD-fFD"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-Oe-PPB" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-Oe-PPB" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="○">
+                                    <state key="normal" image="circle">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="circlePressed:" destination="-1" eventType="touchUpInside" id="vVy-Vw-iRn"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="087-oZ-N8h" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="087-oZ-N8h" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="□">
+                                    <state key="normal" image="box">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="boxPressed:" destination="-1" eventType="touchUpInside" id="MBA-pV-WHq"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-jv-PB2" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-jv-PB2" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="̌&lt;">
+                                    <state key="normal" image="down">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="downPressed:" destination="-1" eventType="touchUpInside" id="Fz9-Y2-VaG"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-nn-L3j" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-nn-L3j" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="̂&gt;">
+                                    <state key="normal" image="up">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
@@ -173,17 +173,17 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-ep-jUT">
                             <rect key="frame" x="0.0" y="127" width="312" height="55.5"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-pF-tdg" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-pF-tdg" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title=":">
+                                    <state key="normal" image="colon">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="colonPressed:" destination="-1" eventType="touchUpInside" id="W7j-0Q-pa7"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-uH-EHg" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-uH-EHg" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <state key="normal" title="&quot;">
@@ -193,37 +193,37 @@
                                         <action selector="quotePressed:" destination="-1" eventType="touchUpInside" id="b8z-Fk-AMB"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-CE-0IE" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-CE-0IE" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="ɲ">
+                                    <state key="normal" image="luka">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="lukaPressed:" destination="-1" eventType="touchUpInside" id="rtn-1a-NAJ"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-kf-ChB" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-kf-ChB" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="-'-">
+                                    <state key="normal" image="sound">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="soundPressed:" destination="-1" eventType="touchUpInside" id="4nX-HK-4JE"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-y2-OQt" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-y2-OQt" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                    <state key="normal" title="כ">
+                                    <state key="normal" image="la">
                                         <color key="titleColor" systemColor="darkTextColor"/>
                                     </state>
                                     <connections>
                                         <action selector="laPressed:" destination="-1" eventType="touchUpInside" id="9GS-JF-z9M"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFm-EM-bLA" userLabel="bksp" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFm-EM-bLA" userLabel="bksp" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <state key="normal" image="delete.left" catalog="system">
@@ -245,7 +245,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zR2-A2-ndC">
                             <rect key="frame" x="0.0" y="190.5" width="312" height="55.5"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-r8-Mgm" userLabel="change" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-r8-Mgm" userLabel="change" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <state key="normal" image="globe" catalog="system">
@@ -255,7 +255,7 @@
                                         <action selector="nextKeyboardPressedWithButton:" destination="-1" eventType="touchUpInside" id="ZBt-Ag-8lh"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cif-2F-Qwv" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cif-2F-Qwv" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="205" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -266,7 +266,7 @@
                                         <action selector="spacePressed" destination="-1" eventType="touchUpInside" id="fDn-hN-C6m"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-Kk-Kex" userLabel="return" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-Kk-Kex" userLabel="return" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <state key="normal" image="return" catalog="system">
@@ -315,69 +315,25 @@
         </view>
     </objects>
     <resources>
+        <image name="box" width="17" height="17"/>
+        <image name="circle" width="14" height="14"/>
+        <image name="cl_br" width="5" height="12"/>
+        <image name="colon" width="4" height="11"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="dot" width="5" height="6"/>
+        <image name="down" width="15" height="8"/>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="hor" width="15" height="2"/>
+        <image name="ike" width="14" height="8"/>
+        <image name="la" width="8" height="14"/>
+        <image name="luka" width="14" height="10"/>
+        <image name="op_br" width="5" height="12"/>
+        <image name="poki" width="11" height="9"/>
+        <image name="pona" width="14" height="8"/>
         <image name="return" catalog="system" width="128" height="101"/>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="sound" width="15" height="7"/>
+        <image name="up" width="16" height="14"/>
+        <image name="vert" width="2" height="15"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
