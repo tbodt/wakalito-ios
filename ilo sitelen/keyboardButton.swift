@@ -7,8 +7,11 @@
 
 import UIKit
 
+@IBDesignable
 class KeyboardButton: UIButton {
+    @IBInspectable
   var defaultBackgroundColor: UIColor = .white
+    @IBInspectable
   var highlightBackgroundColor: UIColor = .lightGray
 
   override init(frame: CGRect) {

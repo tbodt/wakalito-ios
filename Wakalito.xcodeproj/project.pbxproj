@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C49015D24C80D65004ACA33 /* keyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49015C24C80D65004ACA33 /* keyboardButton.swift */; };
-		4C49015F24C80F3D004ACA33 /* colorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49015E24C80F3D004ACA33 /* colorScheme.swift */; };
 		4C49016024C814D3004ACA33 /* wakalitoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6D2924C6A94B00C2F149 /* wakalitoData.swift */; };
 		4C5F6CE724C697F900C2F149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6CE624C697F900C2F149 /* AppDelegate.swift */; };
 		4C5F6CE924C697F900C2F149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6CE824C697F900C2F149 /* SceneDelegate.swift */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		4C49015C24C80D65004ACA33 /* keyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardButton.swift; sourceTree = "<group>"; };
-		4C49015E24C80F3D004ACA33 /* colorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorScheme.swift; sourceTree = "<group>"; };
 		4C5F6CE324C697F900C2F149 /* nasin Wakalito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nasin Wakalito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5F6CE624C697F900C2F149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5F6CE824C697F900C2F149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				4C5F6D1E24C6980A00C2F149 /* Info.plist */,
 				4C5F6D2624C69DE900C2F149 /* keyboardView.xib */,
 				4C49015C24C80D65004ACA33 /* keyboardButton.swift */,
-				4C49015E24C80F3D004ACA33 /* colorScheme.swift */,
 				4C5F6D2924C6A94B00C2F149 /* wakalitoData.swift */,
 			);
 			path = "ilo sitelen";
@@ -242,7 +239,6 @@
 			files = (
 				4C49015D24C80D65004ACA33 /* keyboardButton.swift in Sources */,
 				4C5F6D1D24C6980A00C2F149 /* KeyboardViewController.swift in Sources */,
-				4C49015F24C80F3D004ACA33 /* colorScheme.swift in Sources */,
 				4C49016024C814D3004ACA33 /* wakalitoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

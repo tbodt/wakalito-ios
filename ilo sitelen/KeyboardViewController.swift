@@ -64,51 +64,7 @@ class KeyboardViewController: UIInputViewController {
       }
       return lastWord
     }
-    
-    // MARK: setColorScheme
-    
-     func setColorScheme(_ colorScheme: keyboardColorScheme) {
-       let colorScheme = keyboardColors(colorScheme: colorScheme)
-       previewLabel.backgroundColor = colorScheme.previewBackgroundColor
-       previewLabel.textColor = colorScheme.previewTextColor
-       self.view.backgroundColor = colorScheme.backgroundColor
 
-        for view in self.view.subviews {
-            if (view.subviews.count == 0){
-                continue
-            }
-            
-            for view2 in view.subviews{
-                if (view2.subviews.count == 0){
-                    continue
-                }
-                
-                for view3 in view2.subviews{
-                    
-                 if let button = view3 as? KeyboardButton {
-                    
-                   button.setTitleColor(colorScheme.buttonTextColor, for: [])
-                   button.tintColor = colorScheme.buttonTextColor
-
-                   if button == nextKeyboardButton || button == deleteButton || button == returnButton {
-                     button.defaultBackgroundColor = colorScheme.buttonHighlightColor
-                     button.highlightBackgroundColor = colorScheme.buttonBackgroundColor
-                   } else {
-                     button.defaultBackgroundColor = colorScheme.buttonBackgroundColor
-                     button.highlightBackgroundColor = colorScheme.buttonHighlightColor
-                   }
-                    }
-                }
-            }
-        }
-    }
-    
-    
-    
-
-    
-   
-    
     override func updateViewConstraints() {
         super.updateViewConstraints()
 
@@ -117,7 +73,6 @@ class KeyboardViewController: UIInputViewController {
     
     override func awakeFromNib() {
       super.awakeFromNib()
-      setColorScheme(.light)
       //setNextKeyboardVisible(false)
     }
 
@@ -136,21 +91,6 @@ class KeyboardViewController: UIInputViewController {
         let nib = UINib(nibName: "keyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as? UIView;
-        
-        
-        let colorScheme: keyboardColorScheme
-
-        if textDocumentProxy.keyboardAppearance == .dark {
-            colorScheme = .dark
-        } else {
-            colorScheme = .light
-        }
-
-        self.setColorScheme(colorScheme)
-        
-        
-        
-        
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
@@ -171,8 +111,6 @@ class KeyboardViewController: UIInputViewController {
         
             //heightConstraint.constant = heightKeyboard
             stackView.layoutIfNeeded()
-            
-
         }
     }
    
@@ -320,19 +258,6 @@ class KeyboardViewController: UIInputViewController {
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }*/
-    
-    override func textDidChange(_ textInput: UITextInput?) {
-        let colorScheme: keyboardColorScheme
-
-        if textDocumentProxy.keyboardAppearance == .dark {
-          colorScheme = .dark
-        } else {
-          colorScheme = .light
-        }
-
-        self.setColorScheme(colorScheme)
-      }
-    
 }
 
 
