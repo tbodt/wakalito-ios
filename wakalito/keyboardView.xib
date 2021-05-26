@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="wakalito" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="AFm-EM-bLA" id="eme-vV-U9w"/>
+                <outlet property="nextKeyboardButton" destination="T0A-r8-Mgm" id="rDp-hZ-0Qr"/>
+                <outlet property="previewLabel" destination="spH-cg-zmB" id="bVV-e8-v3u"/>
+                <outlet property="returnButton" destination="r5x-Kk-Kex" id="Nd2-Hi-dXH"/>
+                <outlet property="stackView" destination="sPO-Oy-Ir0" id="0CM-yx-qHp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-Oy-Ir0">
+                    <rect key="frame" x="4" y="53" width="312" height="246"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-ms-CxO">
+                            <rect key="frame" x="0.0" y="0.0" width="312" height="55.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-sQ-Rt1" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="[">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="opbrPressed:" destination="-1" eventType="touchUpInside" id="SUI-2f-hIM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psm-Xn-3kP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="|">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="vertPressed:" destination="-1" eventType="touchUpInside" id="EaG-DK-HaS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn5-XN-uOS" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="–">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="horPressed:" destination="-1" eventType="touchUpInside" id="9WC-sk-VL4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-FO-xJU" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="ᴗ">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="ponaPressed:" destination="-1" eventType="touchUpInside" id="pwp-xr-H4g"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgG-sM-rcP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="ᴖ">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="ikePressed:" destination="-1" eventType="touchUpInside" id="Bh1-g4-ak8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-5X-LDt" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="dotPressed:" destination="-1" eventType="touchUpInside" id="uBx-hz-nlN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="psm-Xn-3kP" firstAttribute="width" secondItem="dlQ-sQ-Rt1" secondAttribute="width" id="4Oe-VO-5nw"/>
+                                <constraint firstItem="bdI-FO-xJU" firstAttribute="width" secondItem="dlQ-sQ-Rt1" secondAttribute="width" id="9jn-um-gli"/>
+                                <constraint firstItem="RgG-sM-rcP" firstAttribute="width" secondItem="dlQ-sQ-Rt1" secondAttribute="width" id="FQa-CK-vqa"/>
+                                <constraint firstItem="Yn5-XN-uOS" firstAttribute="width" secondItem="dlQ-sQ-Rt1" secondAttribute="width" id="L6x-5f-Iwy"/>
+                                <constraint firstItem="ZOS-5X-LDt" firstAttribute="width" secondItem="dlQ-sQ-Rt1" secondAttribute="width" id="M2G-7p-5Sj"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-Y4-Hra">
+                            <rect key="frame" x="0.0" y="63.5" width="312" height="55.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-41-DUP" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="]">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clbrPressed:" destination="-1" eventType="touchUpInside" id="GLo-wG-0Ca"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh7-xz-es5" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="⨆">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pokiPressed:" destination="-1" eventType="touchUpInside" id="TPP-tD-fFD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-Oe-PPB" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="○">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="circlePressed:" destination="-1" eventType="touchUpInside" id="vVy-Vw-iRn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="087-oZ-N8h" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="□">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="boxPressed:" destination="-1" eventType="touchUpInside" id="MBA-pV-WHq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-jv-PB2" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="̌&lt;">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="downPressed:" destination="-1" eventType="touchUpInside" id="Fz9-Y2-VaG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-nn-L3j" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="̂&gt;">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="upPressed:" destination="-1" eventType="touchUpInside" id="9Uu-4Z-Yok"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="rh7-xz-es5" firstAttribute="width" secondItem="Fpk-41-DUP" secondAttribute="width" id="SUD-Jc-QW8"/>
+                                <constraint firstItem="HgW-nn-L3j" firstAttribute="width" secondItem="Fpk-41-DUP" secondAttribute="width" id="Twj-Pg-kV7"/>
+                                <constraint firstItem="QhJ-jv-PB2" firstAttribute="width" secondItem="Fpk-41-DUP" secondAttribute="width" id="exd-BB-I9H"/>
+                                <constraint firstItem="087-oZ-N8h" firstAttribute="width" secondItem="Fpk-41-DUP" secondAttribute="width" id="gYq-H4-Eyt"/>
+                                <constraint firstItem="2hx-Oe-PPB" firstAttribute="width" secondItem="Fpk-41-DUP" secondAttribute="width" id="kfs-cB-2n7"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-ep-jUT">
+                            <rect key="frame" x="0.0" y="127" width="312" height="55.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-pF-tdg" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title=":">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="colonPressed:" destination="-1" eventType="touchUpInside" id="W7j-0Q-pa7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-uH-EHg" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="&quot;">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="quotePressed:" destination="-1" eventType="touchUpInside" id="b8z-Fk-AMB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-CE-0IE" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="107.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="ɲ">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="lukaPressed:" destination="-1" eventType="touchUpInside" id="rtn-1a-NAJ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-kf-ChB" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="161" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="-'-">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="soundPressed:" destination="-1" eventType="touchUpInside" id="4nX-HK-4JE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-y2-OQt" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="214.5" y="0.0" width="44" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" title="כ">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="laPressed:" destination="-1" eventType="touchUpInside" id="9GS-JF-z9M"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFm-EM-bLA" userLabel="bksp" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" image="delete.left" catalog="system">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deletePressedWithButton:" destination="-1" eventType="touchUpInside" id="n2M-WK-HhI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="hxf-kf-ChB" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="A6R-Xl-bPB"/>
+                                <constraint firstItem="ky4-uH-EHg" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="DeR-xY-Zt0"/>
+                                <constraint firstItem="AFm-EM-bLA" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="Vz7-4k-7Lr"/>
+                                <constraint firstItem="ztl-y2-OQt" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="eZ3-Lw-anh"/>
+                                <constraint firstItem="MKV-CE-0IE" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="yh3-qb-5iE"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zR2-A2-ndC">
+                            <rect key="frame" x="0.0" y="190.5" width="312" height="55.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-r8-Mgm" userLabel="change" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" image="globe" catalog="system">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextKeyboardPressedWithButton:" destination="-1" eventType="touchUpInside" id="ZBt-Ag-8lh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cif-2F-Qwv" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="53.5" y="0.0" width="205" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="space">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="spacePressed" destination="-1" eventType="touchUpInside" id="fDn-hN-C6m"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-Kk-Kex" userLabel="return" customClass="KeyboardButton" customModule="wakalito" customModuleProvider="target">
+                                    <rect key="frame" x="268.5" y="0.0" width="43.5" height="55.5"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <state key="normal" image="return" catalog="system">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="returnPressed:" destination="-1" eventType="touchUpInside" id="Iku-ft-1VS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dlQ-sQ-Rt1" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="4nT-vz-hiB"/>
+                        <constraint firstAttribute="height" constant="246" id="76B-H5-9Gv"/>
+                        <constraint firstItem="T0A-r8-Mgm" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="A7f-5B-Hr7"/>
+                        <constraint firstItem="WbD-Y4-Hra" firstAttribute="height" secondItem="zR2-A2-ndC" secondAttribute="height" id="BQH-Pe-86d"/>
+                        <constraint firstItem="r5x-Kk-Kex" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="Rhd-gm-6po"/>
+                        <constraint firstItem="9oY-ms-CxO" firstAttribute="height" secondItem="zR2-A2-ndC" secondAttribute="height" id="Yrf-97-aa8"/>
+                        <constraint firstItem="MDl-ep-jUT" firstAttribute="height" secondItem="zR2-A2-ndC" secondAttribute="height" id="fTB-SQ-y19"/>
+                        <constraint firstItem="Fpk-41-DUP" firstAttribute="width" secondItem="2nY-pF-tdg" secondAttribute="width" id="gjP-bE-aqf"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spH-cg-zmB" userLabel="PreviewLabel">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="XRF-9u-nuh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pKn-bC-llz"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="spH-cg-zmB" secondAttribute="trailing" id="6Jd-RI-fp2"/>
+                <constraint firstItem="pKn-bC-llz" firstAttribute="trailing" secondItem="sPO-Oy-Ir0" secondAttribute="trailing" constant="4" id="6Jj-ol-NAj"/>
+                <constraint firstItem="pKn-bC-llz" firstAttribute="bottom" secondItem="sPO-Oy-Ir0" secondAttribute="bottom" constant="4" id="CCh-u5-yea"/>
+                <constraint firstItem="sPO-Oy-Ir0" firstAttribute="leading" secondItem="pKn-bC-llz" secondAttribute="leading" constant="4" id="nLM-GD-7H5"/>
+                <constraint firstItem="spH-cg-zmB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qH9-hy-Nm6"/>
+                <constraint firstItem="spH-cg-zmB" firstAttribute="bottom" secondItem="sPO-Oy-Ir0" secondAttribute="top" constant="-8" id="we2-77-ozk"/>
+                <constraint firstItem="spH-cg-zmB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ws1-TJ-pNB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-113.04347826086958" y="24.441964285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="return" catalog="system" width="128" height="101"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
