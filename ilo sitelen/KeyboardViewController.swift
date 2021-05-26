@@ -90,7 +90,8 @@ class KeyboardViewController: UIInputViewController {
         
         let nib = UINib(nibName: "keyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
-        view = objects[0] as? UIView;
+        view = objects[0] as? UIView
+        nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {

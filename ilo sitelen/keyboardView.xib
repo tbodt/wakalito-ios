@@ -423,9 +423,6 @@
                                             <color key="value" name="walo nena"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="nextKeyboardPressedWithButton:" destination="-1" eventType="touchUpInside" id="ZBt-Ag-8lh"/>
-                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cif-2F-Qwv" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="205" height="55.5"/>
