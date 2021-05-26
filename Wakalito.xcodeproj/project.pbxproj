@@ -17,7 +17,7 @@
 		4C5F6CF024C697FB00C2F149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */; };
 		4C5F6CF324C697FB00C2F149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6CF124C697FB00C2F149 /* LaunchScreen.storyboard */; };
 		4C5F6D1D24C6980A00C2F149 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6D1C24C6980A00C2F149 /* KeyboardViewController.swift */; };
-		4C5F6D2124C6980A00C2F149 /* wakalito.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C5F6D1A24C6980A00C2F149 /* wakalito.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4C5F6D2124C6980A00C2F149 /* ilo sitelen.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5F6D2724C69DE900C2F149 /* keyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6D2624C69DE900C2F149 /* keyboardView.xib */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4C5F6D2124C6980A00C2F149 /* wakalito.appex in Embed App Extensions */,
+				4C5F6D2124C6980A00C2F149 /* ilo sitelen.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		4C49015C24C80D65004ACA33 /* keyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardButton.swift; sourceTree = "<group>"; };
 		4C49015E24C80F3D004ACA33 /* colorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorScheme.swift; sourceTree = "<group>"; };
-		4C5F6CE324C697F900C2F149 /* keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5F6CE324C697F900C2F149 /* nasin Wakalito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nasin Wakalito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5F6CE624C697F900C2F149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5F6CE824C697F900C2F149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4C5F6CEA24C697F900C2F149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5F6CF224C697FB00C2F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5F6CF424C697FB00C2F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C5F6D1A24C6980A00C2F149 /* wakalito.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wakalito.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ilo sitelen.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5F6D1C24C6980A00C2F149 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		4C5F6D1E24C6980A00C2F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5F6D2624C69DE900C2F149 /* keyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = keyboardView.xib; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		4C5F6CDA24C697F900C2F149 = {
 			isa = PBXGroup;
 			children = (
-				4C5F6CE524C697F900C2F149 /* keyboard */,
-				4C5F6D1B24C6980A00C2F149 /* wakalito */,
+				4C5F6CE524C697F900C2F149 /* ilo lawa */,
+				4C5F6D1B24C6980A00C2F149 /* ilo sitelen */,
 				4C5F6CE424C697F900C2F149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,13 +93,13 @@
 		4C5F6CE424C697F900C2F149 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C5F6CE324C697F900C2F149 /* keyboard.app */,
-				4C5F6D1A24C6980A00C2F149 /* wakalito.appex */,
+				4C5F6CE324C697F900C2F149 /* nasin Wakalito.app */,
+				4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C5F6CE524C697F900C2F149 /* keyboard */ = {
+		4C5F6CE524C697F900C2F149 /* ilo lawa */ = {
 			isa = PBXGroup;
 			children = (
 				4C5F6CE624C697F900C2F149 /* AppDelegate.swift */,
@@ -110,10 +110,10 @@
 				4C5F6CF124C697FB00C2F149 /* LaunchScreen.storyboard */,
 				4C5F6CF424C697FB00C2F149 /* Info.plist */,
 			);
-			path = keyboard;
+			path = "ilo lawa";
 			sourceTree = "<group>";
 		};
-		4C5F6D1B24C6980A00C2F149 /* wakalito */ = {
+		4C5F6D1B24C6980A00C2F149 /* ilo sitelen */ = {
 			isa = PBXGroup;
 			children = (
 				4C5F6D1C24C6980A00C2F149 /* KeyboardViewController.swift */,
@@ -123,15 +123,15 @@
 				4C49015E24C80F3D004ACA33 /* colorScheme.swift */,
 				4C5F6D2924C6A94B00C2F149 /* wakalitoData.swift */,
 			);
-			path = wakalito;
+			path = "ilo sitelen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C5F6CE224C697F900C2F149 /* keyboard */ = {
+		4C5F6CE224C697F900C2F149 /* nasin Wakalito */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C5F6D0D24C697FB00C2F149 /* Build configuration list for PBXNativeTarget "keyboard" */;
+			buildConfigurationList = 4C5F6D0D24C697FB00C2F149 /* Build configuration list for PBXNativeTarget "nasin Wakalito" */;
 			buildPhases = (
 				4C5F6CDF24C697F900C2F149 /* Sources */,
 				4C5F6CE024C697F900C2F149 /* Frameworks */,
@@ -143,14 +143,14 @@
 			dependencies = (
 				4C5F6D2024C6980A00C2F149 /* PBXTargetDependency */,
 			);
-			name = keyboard;
+			name = "nasin Wakalito";
 			productName = keyboard;
-			productReference = 4C5F6CE324C697F900C2F149 /* keyboard.app */;
+			productReference = 4C5F6CE324C697F900C2F149 /* nasin Wakalito.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C5F6D1924C6980A00C2F149 /* wakalito */ = {
+		4C5F6D1924C6980A00C2F149 /* ilo sitelen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C5F6D2224C6980A00C2F149 /* Build configuration list for PBXNativeTarget "wakalito" */;
+			buildConfigurationList = 4C5F6D2224C6980A00C2F149 /* Build configuration list for PBXNativeTarget "ilo sitelen" */;
 			buildPhases = (
 				4C5F6D1624C6980A00C2F149 /* Sources */,
 				4C5F6D1724C6980A00C2F149 /* Frameworks */,
@@ -160,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = wakalito;
+			name = "ilo sitelen";
 			productName = wakalito;
-			productReference = 4C5F6D1A24C6980A00C2F149 /* wakalito.appex */;
+			productReference = 4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4C5F6CDE24C697F900C2F149 /* Build configuration list for PBXProject "keyboard" */;
+			buildConfigurationList = 4C5F6CDE24C697F900C2F149 /* Build configuration list for PBXProject "Wakalito" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C5F6CE224C697F900C2F149 /* keyboard */,
-				4C5F6D1924C6980A00C2F149 /* wakalito */,
+				4C5F6CE224C697F900C2F149 /* nasin Wakalito */,
+				4C5F6D1924C6980A00C2F149 /* ilo sitelen */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		4C5F6D2024C6980A00C2F149 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C5F6D1924C6980A00C2F149 /* wakalito */;
+			target = 4C5F6D1924C6980A00C2F149 /* ilo sitelen */;
 			targetProxy = 4C5F6D1F24C6980A00C2F149 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,12 +396,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
-				INFOPLIST_FILE = keyboard/Info.plist;
+				INFOPLIST_FILE = "ilo lawa/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokipona.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbodt.nasin-Wakalito";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,12 +415,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
-				INFOPLIST_FILE = keyboard/Info.plist;
+				INFOPLIST_FILE = "ilo lawa/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokipona.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbodt.nasin-Wakalito";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,13 +432,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
-				INFOPLIST_FILE = wakalito/Info.plist;
+				INFOPLIST_FILE = "ilo sitelen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokipona.keyboard.wakalito;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbodt.nasin-Wakalito.ilo-sitelen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,13 +451,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
-				INFOPLIST_FILE = wakalito/Info.plist;
+				INFOPLIST_FILE = "ilo sitelen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokipona.keyboard.wakalito;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbodt.nasin-Wakalito.ilo-sitelen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -468,7 +468,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C5F6CDE24C697F900C2F149 /* Build configuration list for PBXProject "keyboard" */ = {
+		4C5F6CDE24C697F900C2F149 /* Build configuration list for PBXProject "Wakalito" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5F6D0B24C697FB00C2F149 /* Debug */,
@@ -477,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C5F6D0D24C697FB00C2F149 /* Build configuration list for PBXNativeTarget "keyboard" */ = {
+		4C5F6D0D24C697FB00C2F149 /* Build configuration list for PBXNativeTarget "nasin Wakalito" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5F6D0E24C697FB00C2F149 /* Debug */,
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C5F6D2224C6980A00C2F149 /* Build configuration list for PBXNativeTarget "wakalito" */ = {
+		4C5F6D2224C6980A00C2F149 /* Build configuration list for PBXNativeTarget "ilo sitelen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C5F6D2324C6980A00C2F149 /* Debug */,
