@@ -316,7 +316,7 @@ struct wakalitoData {
             sitelen.bounds = CGRect(x: 0, y: (height - im.size.height) / 2, width: im.size.width, height: im.size.height)
             str.append(NSAttributedString(attachment: sitelen))
             let weka = NSTextAttachment()
-            weka.bounds = CGRect(x: 0, y: 0, width: 5, height: 0)
+            weka.bounds = CGRect(x: 0, y: 0, width: 6, height: 0)
             str.append(NSAttributedString(attachment: weka))
         }
         return str
