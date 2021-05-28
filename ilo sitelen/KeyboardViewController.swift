@@ -210,7 +210,10 @@ class KeyboardViewController: UIInputViewController {
             if cacheLetter.first?.isPunctuation ?? false && textDocumentProxy.documentContextBeforeInput?.hasSuffix(" ") ?? false {
                 textDocumentProxy.deleteBackward()
             }
-            textDocumentProxy.insertText("\(cacheLetter) ")
+            textDocumentProxy.insertText("\(cacheLetter)")
+            if cacheLetter != "-" {
+                textDocumentProxy.insertText(" ")
+            }
             // Clear our the signal cache
             signalCache = []
         } else {
