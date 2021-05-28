@@ -439,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
 				INFOPLIST_FILE = "ilo sitelen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CK5SXRTBR7;
 				INFOPLIST_FILE = "ilo sitelen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
