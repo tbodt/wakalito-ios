@@ -21,6 +21,7 @@
 		BBC076E3265EB34F007C46B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */; };
 		BBC076EA2660812A007C46B8 /* linja-sike.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBC076E92660812A007C46B8 /* linja-sike.otf */; };
 		BBC076EB2660812A007C46B8 /* linja-sike.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBC076E92660812A007C46B8 /* linja-sike.otf */; };
+		BBC076F42660D8AF007C46B8 /* wakalitoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F6D2924C6A94B00C2F149 /* wakalitoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +237,7 @@
 				4C5F6CEB24C697F900C2F149 /* ViewController.swift in Sources */,
 				4C5F6CE724C697F900C2F149 /* AppDelegate.swift in Sources */,
 				4C5F6CE924C697F900C2F149 /* SceneDelegate.swift in Sources */,
+				BBC076F42660D8AF007C46B8 /* wakalitoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
