@@ -293,7 +293,15 @@ struct wakalitoData {
         [.up, .circle, .circle, .circle]: "apeja",
     ]
 
-    static let codesForDisplay = code.map { ($0.1, $0.0) }.sorted(by: { $0.0 < $1.0 })
+    static let codesForDisplay = code.map { ($0.1, $0.0) }.sorted {
+        if $0.0.first!.isPunctuation && !$1.0.first!.isPunctuation {
+            return false
+        }
+        if !$0.0.first!.isPunctuation && $1.0.first!.isPunctuation {
+            return true
+        }
+        return $0.0 < $1.0
+    }
 
     /// Converts an array of signals into the associated letter if it exists
     static func letter(fromSignals signals: [Key]) -> String? {
