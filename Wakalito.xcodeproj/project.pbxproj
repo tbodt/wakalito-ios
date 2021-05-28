@@ -19,6 +19,8 @@
 		4C5F6D2124C6980A00C2F149 /* ilo sitelen.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C5F6D1A24C6980A00C2F149 /* ilo sitelen.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5F6D2724C69DE900C2F149 /* keyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6D2624C69DE900C2F149 /* keyboardView.xib */; };
 		BBC076E3265EB34F007C46B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */; };
+		BBC076EA2660812A007C46B8 /* linja-sike.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBC076E92660812A007C46B8 /* linja-sike.otf */; };
+		BBC076EB2660812A007C46B8 /* linja-sike.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBC076E92660812A007C46B8 /* linja-sike.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		4C5F6D1E24C6980A00C2F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5F6D2624C69DE900C2F149 /* keyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = keyboardView.xib; sourceTree = "<group>"; };
 		4C5F6D2924C6A94B00C2F149 /* wakalitoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakalitoData.swift; sourceTree = "<group>"; };
+		BBC076E92660812A007C46B8 /* linja-sike.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "linja-sike.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 				4C5F6CEF24C697FB00C2F149 /* Assets.xcassets */,
 				4C5F6CF124C697FB00C2F149 /* LaunchScreen.storyboard */,
 				4C5F6CF424C697FB00C2F149 /* Info.plist */,
+				BBC076E92660812A007C46B8 /* linja-sike.otf */,
 			);
 			path = "ilo lawa";
 			sourceTree = "<group>";
@@ -206,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5F6CF324C697FB00C2F149 /* LaunchScreen.storyboard in Resources */,
+				BBC076EA2660812A007C46B8 /* linja-sike.otf in Resources */,
 				4C5F6CF024C697FB00C2F149 /* Assets.xcassets in Resources */,
 				4C5F6CEE24C697F900C2F149 /* Main.storyboard in Resources */,
 			);
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC076E3265EB34F007C46B8 /* Assets.xcassets in Resources */,
+				BBC076EB2660812A007C46B8 /* linja-sike.otf in Resources */,
 				4C5F6D2724C69DE900C2F149 /* keyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
