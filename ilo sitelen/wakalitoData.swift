@@ -15,14 +15,14 @@ struct wakalitoData {
         case hor = "-"
         case pona = "ᴗ"
         case ike = "ᴖ"
-        case dot = "."
+        case dot = "•"
 
         case cl_br = "]"
         case poki = "⨆"
         case circle = "o"
         case box = "□"
-        case down = "v"
-        case up = "^"
+        case down = "⌄"
+        case up = "⌃"
 
         case colon = ":"
         case quote = "\""
@@ -273,6 +273,28 @@ struct wakalitoData {
         }.map {
             $0.value
         }.first
+    }
+
+    static func sitelenENasin(_ nasin: [wakalitoData.Key], height: CGFloat) -> NSAttributedString {
+        let str = NSMutableAttributedString()
+        let sinpin = NSTextAttachment()
+        sinpin.bounds = CGRect(x: 0, y: 0, width: 0, height: height)
+        str.append(NSAttributedString(attachment: sinpin))
+        for key in nasin {
+            if key == .quote {
+                str.append(NSAttributedString(string: "\""))
+            } else {
+                let sitelen = NSTextAttachment()
+                let im = key.sitelen()
+                sitelen.image = im
+                sitelen.bounds = CGRect(x: 0, y: (height - im.size.height) / 2, width: im.size.width, height: im.size.height)
+                str.append(NSAttributedString(attachment: sitelen))
+                let weka = NSTextAttachment()
+                weka.bounds = CGRect(x: 0, y: 0, width: 5, height: 0)
+                str.append(NSAttributedString(attachment: weka))
+            }
+        }
+        return str
     }
 }
 

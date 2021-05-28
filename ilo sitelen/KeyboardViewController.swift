@@ -25,14 +25,15 @@ class KeyboardViewController: UIInputViewController {
 
     var signalCache: [wakalitoData.Key] = [] {
       didSet {
-        var text = ""
+        let text = NSMutableAttributedString()
         if signalCache.count > 0 {
-          text = signalCache.reduce("") {
-            return $0 + $1.rawValue
-          }
-          text += " = \(cacheLetter)"
+            text.append(wakalitoData.sitelenENasin(signalCache, height: 10))
+            text.append(NSAttributedString(string: " = "))
+            text.append(NSAttributedString(string: cacheLetter, attributes: [
+                .font: UIFont(name: "linja-sike", size: 17)!
+            ]))
         }
-        previewLabel.text = text
+        previewLabel.attributedText = text
         print(text)
       }
     }
