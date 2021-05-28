@@ -170,8 +170,8 @@ class KeyboardViewController: UIInputViewController {
     }
     
     
-    @IBAction func quotePressed(_ sender: Any) {
-        addSignal(.quote)
+    @IBAction func commaPressed(_ sender: Any) {
+        addSignal(.comma)
     }
     
     @IBAction func lukaPressed(_ sender: Any) {

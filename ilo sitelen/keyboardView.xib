@@ -9,6 +9,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="linja-sike.otf">
+            <string>linja-sike</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="ilo_sitelen" customModuleProvider="target">
             <connections>
@@ -306,7 +311,7 @@
                                     <rect key="frame" x="53.5" y="0.0" width="44" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                     <color key="tintColor" systemColor="labelColor"/>
-                                    <state key="normal" title="&quot;">
+                                    <state key="normal" image="comma">
                                         <color key="titleColor" systemColor="labelColor"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
@@ -318,7 +323,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="quotePressed:" destination="-1" eventType="touchUpInside" id="b8z-Fk-AMB"/>
+                                        <action selector="commaPressed:" destination="-1" eventType="touchUpInside" id="962-c4-xhj"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-CE-0IE" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
@@ -428,8 +433,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cif-2F-Qwv" customClass="KeyboardButton" customModule="ilo_sitelen" customModuleProvider="target">
                                     <rect key="frame" x="53.5" y="0.0" width="205" height="55.5"/>
                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="22"/>
                                     <color key="tintColor" systemColor="labelColor"/>
-                                    <state key="normal" title="space">
+                                    <state key="normal">
                                         <color key="titleColor" systemColor="labelColor"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
@@ -541,7 +547,7 @@
             <size key="intrinsicContentSize" width="13.5" height="22"/>
         </designable>
         <designable name="cif-2F-Qwv">
-            <size key="intrinsicContentSize" width="49" height="34"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="dlQ-sQ-Rt1">
             <size key="intrinsicContentSize" width="5" height="22"/>
@@ -550,7 +556,7 @@
             <size key="intrinsicContentSize" width="14.5" height="22"/>
         </designable>
         <designable name="ky4-uH-EHg">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="5" height="22"/>
         </designable>
         <designable name="psm-Xn-3kP">
             <size key="intrinsicContentSize" width="2" height="22"/>
@@ -570,6 +576,7 @@
         <image name="circle" width="14" height="14"/>
         <image name="cl_br" width="5" height="12"/>
         <image name="colon" width="4" height="11"/>
+        <image name="comma" width="5" height="6"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <image name="dot" width="5" height="6"/>
         <image name="down" width="15" height="8"/>

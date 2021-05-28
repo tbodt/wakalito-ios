@@ -25,7 +25,7 @@ struct wakalitoData {
         case up = "⌃"
 
         case colon = ":"
-        case quote = "\""
+        case comma = ","
         case luka = "ᕄ"
         case sound = "⟂"
         case la = "ɔ"
@@ -47,6 +47,7 @@ struct wakalitoData {
             case .down: return UIImage(named: "down")!
             case .up: return UIImage(named: "up")!
             case .colon: return UIImage(named: "colon")!
+            case .comma: return UIImage(named: "comma")!
             case .luka: return UIImage(named: "luka")!
             case .sound: return UIImage(named: "sound")!
             case .la: return UIImage(named: "la")!
@@ -58,15 +59,18 @@ struct wakalitoData {
     // Letter to sitelen pona
     static let code: [[Key]: String] = [
         [.op_br]: "[",
-        [.hor]: "⎯",
+        [.hor]: "-",
         [.cl_br]: "]",
-        [.quote]: "\"",
         [.colon]: ":",
         [.dot]: ".",
         [.dot, .dot]: ",",
         [.vert, .vert, .dot]: "!",
+        [.colon, .colon]: "-",
+        [.comma]: ",",
+        [.comma, .comma]: "\"",
         [.vert, .circle, .dot]: "a",
         [.vert, .dot, .dot]: "a",
+        [.vert, .dot, .vert, .dot]: "a a ",
         [.dot, .dot, .hor, .hor, .hor, .circle]: "akesi",
         [.circle, .hor, .hor, .hor, .dot, .dot]: "akesi",
         [.down, .up]: "ala",
@@ -91,9 +95,11 @@ struct wakalitoData {
         [.luka, .luka, .luka]: "jaki",
         [.circle, .up]: "jan",
         [.circle, .box, .up, .hor]: "jelo",
+        [.circle, .box, .hor, .up]: "jelo",
+        [.hor, .up, .circle, .box]: "jelo",
+        [.up, .hor, .circle, .box]: "jelo",
         [.circle, .pona, .hor]: "jo",
         [.up, .circle]: "kala",
-        [.ike, .pona]: "kala",
         [.pona, .hor, .sound]: "kalama",
         [.hor, .pona, .sound]: "kalama",
         [.sound, .hor, .pona]: "kalama",
@@ -114,6 +120,7 @@ struct wakalitoData {
         [.pona, .circle, .ike]: "ko",
         [.down, .up, .down, .up]: "kon",
         [.la, .la, .la, .la]: "kon",
+        [.up, .down, .up, .down]: "kon",
         [.up, .hor]: "kule",
         [.up, .hor, .hor, .hor]: "kule",
         [.circle, .circle, .circle]: "kulupu",
@@ -122,17 +129,26 @@ struct wakalitoData {
         [.la]: "la",
         [.hor, .hor, .circle]: "lape",
         [.circle, .circle, .vert, .up, .hor]: "laso",
+        [.vert, .circle, .circle, .up, .hor]: "laso",
+        [.vert, .circle, .circle, .hor, .up]: "laso",
+        [.circle, .circle, .vert, .hor, .up]: "laso",
         [.circle, .hor]: "lawa",
         [.box, .vert, .vert, .vert]: "len",
         [.vert, .vert, .vert, .box]: "len",
-        [.down, .up, .vert]: "lete",
         [.up, .down, .hor]: "lete",
+        [.hor, .down, .up]: "lete",
+        [.hor, .up, .down]: "lete",
         [.up]: "li",
         [.down]: "lili",
         [.pona, .ike]: "linja",
+        [.ike, .pona]: "linja",
         [.box]: "lipu",
         [.pona, .hor, .up, .hor]: "loje",
         [.hor, .pona, .up, .hor]: "loje",
+        [.up, .hor, .pona, .hor]: "loje",
+        [.hor, .up, .pona, .hor]: "loje",
+        [.up, .hor, .hor, .pona]: "loje",
+        [.hor, .up, .hor, .pona]: "loje",
         [.dot, .hor]: "lon",
         [.hor, .dot]: "lon",
         [.luka]: "luka",
@@ -146,6 +162,7 @@ struct wakalitoData {
         [.circle, .pona]: "mani",
         [.hor, .circle, .hor]: "mani",
         [.ike, .circle]: "meli",
+        [.circle, .ike]: "meli",
         [.vert, .circle]: "mi",
         [.up, .circle, .up]: "mije",
         [.pona, .hor, .luka]: "moku",
@@ -154,10 +171,12 @@ struct wakalitoData {
         [.luka, .pona, .hor]: "moku",
         [.circle, .down, .up, .down, .up]: "moli",
         [.circle, .down, .up]: "moli",
+        [.circle, .up, .down, .up, .down]: "moli",
         [.dot, .hor, .vert, .hor]: "monsi",
         [.dot, .op_br]: "monsi",
         [.circle, .circle, .dot, .circle]: "mu",
         [.circle, .dot, .circle, .circle]: "mu",
+        [.circle, .circle, .circle, .dot]: "mu",
         [.la, .la]: "mun",
         [.circle, .pona, .circle]: "musi",
         [.vert, .vert, .vert]: "mute",
@@ -174,6 +193,7 @@ struct wakalitoData {
         [.vert, .hor, .vert, .hor]: "nimi",
         [.hor, .vert, .hor, .vert]: "nimi",
         [.vert, .la, .vert]: "noka",
+        [.vert, .la, .hor, .vert]: "noka",
         [.vert, .dot]: "o",
         [.ike, .ike, .down, .ike, .ike, .down]: "olin",
         [.down, .ike, .ike, .down, .ike, .ike]: "olin",
@@ -181,6 +201,7 @@ struct wakalitoData {
         [.poki, .hor]: "open",
         [.hor, .poki]: "open",
         [.box, .down, .up]: "pakala",
+        [.box, .up, .down]: "pakala",
         [.circle, .luka]: "pali",
         [.luka, .circle]: "pali",
         [.ike, .vert, .vert, .pona]: "palisa",
@@ -222,12 +243,18 @@ struct wakalitoData {
         [.sound, .box]: "sona",
         [.hor, .la, .dot, .dot, .vert, .vert, .vert, .vert]: "soweli",
         [.la, .dot, .dot, .vert, .vert]: "soweli",
+        [.la, .vert, .vert, .vert, .vert, .dot, .dot]: "soweli",
+        [.la, .dot, .dot, .vert, .vert, .vert, .vert]: "soweli",
+        [.la, .vert, .vert, .dot, .dot]: "soweli",
+        [.hor, .la, .vert, .vert, .vert, .vert, .dot, .dot]: "soweli",
         [.down, .down]: "suli",
         [.vert, .down, .vert]: "suli",
         [.circle, .box]: "suno",
         [.hor, .vert, .vert]: "supa",
         [.vert, .vert, .hor]: "supa",
         [.up, .dot, .up]: "suwi",
+        [.dot, .up, .up]: "suwi",
+        [.up, .up, .dot]: "suwi",
         [.down, .ike]: "tan",
         [.ike, .down]: "tan",
         [.hor, .vert]: "taso",
@@ -241,6 +268,7 @@ struct wakalitoData {
         [.poki, .up]: "tomo",
         [.vert, .vert]: "tu",
         [.ike, .ike, .down, .circle]: "unpa",
+        [.ike, .ike, .pona, .circle]: "unpa",
         [.pona, .hor, .dot]: "uta",
         [.hor, .pona, .dot]: "uta",
         [.down, .up, .down]: "utala",
@@ -253,6 +281,7 @@ struct wakalitoData {
         [.sound, .vert]: "weka",
         [.pona, .pona]: "wile",
         [.circle, .down, .vert]: "tonsi",
+        [.circle, .vert, .down]: "tonsi",
         [.up, .up, .up, .up]: "monsuta",
         [.down, .down, .down, .down]: "monsuta",
         [.circle, .vert, .vert, .vert, .ike, .up, .vert, .vert, .vert, .dot, .dot]: "kijetesantakalu",
@@ -281,18 +310,14 @@ struct wakalitoData {
         sinpin.bounds = CGRect(x: 0, y: 0, width: 0, height: height)
         str.append(NSAttributedString(attachment: sinpin))
         for key in nasin {
-            if key == .quote {
-                str.append(NSAttributedString(string: "\""))
-            } else {
-                let sitelen = NSTextAttachment()
-                let im = key.sitelen()
-                sitelen.image = im
-                sitelen.bounds = CGRect(x: 0, y: (height - im.size.height) / 2, width: im.size.width, height: im.size.height)
-                str.append(NSAttributedString(attachment: sitelen))
-                let weka = NSTextAttachment()
-                weka.bounds = CGRect(x: 0, y: 0, width: 5, height: 0)
-                str.append(NSAttributedString(attachment: weka))
-            }
+            let sitelen = NSTextAttachment()
+            let im = key.sitelen()
+            sitelen.image = im
+            sitelen.bounds = CGRect(x: 0, y: (height - im.size.height) / 2, width: im.size.width, height: im.size.height)
+            str.append(NSAttributedString(attachment: sitelen))
+            let weka = NSTextAttachment()
+            weka.bounds = CGRect(x: 0, y: 0, width: 5, height: 0)
+            str.append(NSAttributedString(attachment: weka))
         }
         return str
     }
