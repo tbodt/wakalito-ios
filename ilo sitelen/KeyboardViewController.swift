@@ -206,12 +206,14 @@ class KeyboardViewController: UIInputViewController {
 // MARK: spacePressed
     @IBAction func spacePressed() {
         if signalCache.count > 0 {
-             // Clear our the signal cache
-            (textDocumentProxy as UIKeyInput).insertText("\(cacheLetter)")
-            
+            if cacheLetter.first?.isPunctuation ?? false && textDocumentProxy.documentContextBeforeInput?.hasSuffix(" ") ?? false {
+                textDocumentProxy.deleteBackward()
+            }
+            textDocumentProxy.insertText("\(cacheLetter) ")
+            // Clear our the signal cache
             signalCache = []
         } else {
-            (textDocumentProxy as UIKeyInput).insertText(" ")
+            textDocumentProxy.insertText(" ")
            }
          }
 
