@@ -17,6 +17,7 @@
                 <outlet property="previewLabel" destination="spH-cg-zmB" id="bVV-e8-v3u"/>
                 <outlet property="returnButton" destination="r5x-Kk-Kex" id="Nd2-Hi-dXH"/>
                 <outlet property="stackView" destination="sPO-Oy-Ir0" id="0CM-yx-qHp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6sX-WG-4VY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

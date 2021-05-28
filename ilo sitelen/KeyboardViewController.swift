@@ -7,14 +7,6 @@
 
 import UIKit
 
-
-protocol keyboardViewDelegate: class {
-  func insertCharacter(_ newCharacter: String)
-    
-  func deleteCharacterBeforeCursor()
-  func characterBeforeCursor() -> String?
-}
-
 class KeyboardViewController: UIInputViewController {
     
     @IBOutlet var deleteButton: KeyboardButton!
@@ -30,9 +22,7 @@ class KeyboardViewController: UIInputViewController {
     
     var keyboardView: KeyboardViewController!
     var userLexicon: UILexicon?
-    
-    weak var delegate: keyboardViewDelegate?
-    
+
     var signalCache: [wakalitoData.Key] = [] {
       didSet {
         var text = ""
@@ -65,6 +55,13 @@ class KeyboardViewController: UIInputViewController {
       return lastWord
     }
 
+    init() {
+        super.init(nibName: "keyboardView", bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     override func updateViewConstraints() {
         super.updateViewConstraints()
 
@@ -80,17 +77,14 @@ class KeyboardViewController: UIInputViewController {
     // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillShow),
             name: UIResponder.keyboardWillShowNotification,
             object: nil
         )
-        
-        let nib = UINib(nibName: "keyboardView", bundle: nil)
-        let objects = nib.instantiate(withOwner: self, options: nil)
-        view = objects[0] as? UIView
+
+        nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
         nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
     }
     
@@ -206,16 +200,6 @@ class KeyboardViewController: UIInputViewController {
            } else {
                 (textDocumentProxy as UIKeyInput).deleteBackward()
            }
-
-           if signalCache.count == 0 {
-             // Delete because no more signal
-             delegate?.deleteCharacterBeforeCursor()
-            
-           } else {
-             // Building on existing letter by deleting current
-             delegate?.deleteCharacterBeforeCursor()
-             delegate?.insertCharacter(cacheLetter)
-           }
          }
 
     
@@ -230,18 +214,7 @@ class KeyboardViewController: UIInputViewController {
             (textDocumentProxy as UIKeyInput).insertText(" ")
            }
          }
-    
-    
 
-    @IBAction func nextKeyboardPressed(button: UIButton) {
-            advanceToNextInputMode()
-        }
-    
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
-    }
     
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
@@ -259,28 +232,6 @@ class KeyboardViewController: UIInputViewController {
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }*/
-}
-
-
-// MARK: keyboardViewDelegate
-extension KeyboardViewController: keyboardViewDelegate {
-  func insertCharacter(_ newCharacter: String) {
-    if newCharacter == " " {
-      attemptToReplaceCurrentWord()
-    }
-    textDocumentProxy.insertText(newCharacter)
-  }
-
-  func deleteCharacterBeforeCursor() {
-    textDocumentProxy.deleteBackward()
-  }
-
-  func characterBeforeCursor() -> String? {
-    guard let character = textDocumentProxy.documentContextBeforeInput?.last else {
-      return nil
-    }
-    return String(character)
-  }
 }
 
 private extension KeyboardViewController {
