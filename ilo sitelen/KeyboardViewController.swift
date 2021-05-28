@@ -27,10 +27,10 @@ class KeyboardViewController: UIInputViewController {
       didSet {
         let text = NSMutableAttributedString()
         if signalCache.count > 0 {
-            text.append(wakalitoData.sitelenENasin(signalCache, height: 10))
+            text.append(wakalitoData.sitelenENasin(signalCache, height: 14))
             text.append(NSAttributedString(string: " = "))
             text.append(NSAttributedString(string: cacheLetter, attributes: [
-                .font: UIFont(name: "linja-sike", size: 17)!
+                .font: UIFont(name: "linja-sike", size: 23)!
             ]))
         }
         previewLabel.attributedText = text

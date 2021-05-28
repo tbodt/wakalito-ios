@@ -482,7 +482,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="XRF-9u-nuh"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
