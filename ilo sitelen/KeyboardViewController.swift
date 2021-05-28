@@ -207,11 +207,12 @@ class KeyboardViewController: UIInputViewController {
 // MARK: spacePressed
     @IBAction func spacePressed() {
         if signalCache.count > 0 {
-            if cacheLetter.first?.isPunctuation ?? false && textDocumentProxy.documentContextBeforeInput?.hasSuffix(" ") ?? false {
+            let isPunctuation = cacheLetter.first?.isPunctuation ?? false
+            if isPunctuation && textDocumentProxy.documentContextBeforeInput?.hasSuffix(" ") ?? false {
                 textDocumentProxy.deleteBackward()
             }
             textDocumentProxy.insertText("\(cacheLetter)")
-            if cacheLetter != "-" {
+            if !isPunctuation || [",", ":", ".", "?", "!"].contains(cacheLetter) {
                 textDocumentProxy.insertText(" ")
             }
             // Clear our the signal cache
@@ -241,25 +242,6 @@ class KeyboardViewController: UIInputViewController {
 }
 
 private extension KeyboardViewController {
-  func attemptToReplaceCurrentWord() {
-    guard let entries = userLexicon?.entries,
-    let currentWord = currentWord?.lowercased() else {
-        return
-    }
-
-    let replacementEntries = entries.filter {
-      $0.userInput.lowercased() == currentWord
-    }
-
-    if let replacement = replacementEntries.first {
-      for _ in 0..<currentWord.count {
-        textDocumentProxy.deleteBackward()
-      }
-
-      textDocumentProxy.insertText(replacement.documentText)
-    }
-  }
-    
     func addSignal(_ signal: wakalitoData.Key) {
       if signalCache.count == 0 {
         // Have an empty cache
