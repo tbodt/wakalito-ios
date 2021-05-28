@@ -8,6 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
+    @IBOutlet weak var pokiLukin: UITextField!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let placeholder = pokiLukin.placeholder {
+            pokiLukin.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [
+                .font: UIFont(name: "linja-sike", size: 20)!
+            ])
+        }
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if let keyboards = UserDefaults.standard.array(forKey: "AppleKeyboards") as? [String],
@@ -25,8 +36,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ijo", for: indexPath) as! NasinCell
         let (nimi, nasin) = wakalitoData.codesForDisplay[indexPath.row]
-        cell.nimiLabel?.text = nimi
-        cell.nasinLabel?.attributedText = wakalitoData.sitelenENasin(nasin, height: 24)
+        cell.nimiLabel.text = nimi
+        cell.nasinLabel.attributedText = wakalitoData.sitelenENasin(nasin, height: 24)
         return cell
     }
     
@@ -36,8 +47,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 }
 
 class NasinCell : UITableViewCell {
-    @IBOutlet var nimiLabel: UILabel?
-    @IBOutlet var nasinLabel: UILabel?
+    @IBOutlet weak var nimiLabel: UILabel!
+    @IBOutlet weak var nasinLabel: UILabel!
 }
 
 extension UIViewController {
