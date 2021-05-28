@@ -57,7 +57,6 @@ struct wakalitoData {
 
     // Letter to sitelen pona
     static let code: [[Key]: String] = [
-        [.op_br, .cl_br]: ",s",
         [.op_br]: "[",
         [.hor]: "⎯",
         [.cl_br]: "]",
