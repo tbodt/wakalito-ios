@@ -42,20 +42,6 @@ class KeyboardViewController: UIInputViewController {
       return wakalitoData.letter(fromSignals: signalCache) ?? "?"
     }
     
-    var currentWord: String? {
-      var lastWord: String?
-      if let stringBeforeCursor = textDocumentProxy.documentContextBeforeInput {
-        stringBeforeCursor.enumerateSubstrings(in: stringBeforeCursor.startIndex...,
-                                               options: .byWords)
-        { word, _, _, _ in
-          if let word = word {
-            lastWord = word
-          }
-        }
-      }
-      return lastWord
-    }
-
     init() {
         super.init(nibName: "keyboardView", bundle: nil)
     }
@@ -123,8 +109,7 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func horPressed(_ sender: Any) {
         addSignal(.hor)
     }
-    
-    
+
     @IBAction func ponaPressed(_ sender: Any) {
         addSignal(.pona)
     }
@@ -132,12 +117,10 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func ikePressed(_ sender: Any) {
         addSignal(.ike)
     }
-    
 
     @IBAction func dotPressed(_ sender: Any) {
         addSignal(.dot)
     }
-    
     
     @IBAction func clbrPressed(_ sender: Any) {
         addSignal(.cl_br)
@@ -162,13 +145,10 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func upPressed(_ sender: Any) {
         addSignal(.up)
     }
-    
-    
-    
+
     @IBAction func colonPressed(_ sender: Any) {
         addSignal(.colon)
     }
-    
     
     @IBAction func commaPressed(_ sender: Any) {
         addSignal(.comma)
@@ -177,12 +157,10 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func lukaPressed(_ sender: Any) {
         addSignal(.luka)
     }
-    
-    
+
     @IBAction func soundPressed(_ sender: Any) {
         addSignal(.sound)
     }
-    
     
     @IBAction func laPressed(_ sender: Any) {
         addSignal(.la)
@@ -192,53 +170,49 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func returnPressed(_ sender: Any) {
         (textDocumentProxy as UIKeyInput).insertText("\n")
     }
-    
 
-    @IBAction func deletePressed(button: UIButton) {
-           if signalCache.count > 0 {
-             // Remove last signal
-             signalCache.removeLast()
-           } else {
-                (textDocumentProxy as UIKeyInput).deleteBackward()
-           }
-         }
+    func punctShouldHaveSpaceAfter(_ char: Character?) -> Bool {
+        return [",", ":", ".", "?", "!"].contains(char)
+    }
 
-    
-// MARK: spacePressed
     @IBAction func spacePressed() {
         if signalCache.count > 0 {
-            let isPunctuation = cacheLetter.first?.isPunctuation ?? false
-            if isPunctuation && textDocumentProxy.documentContextBeforeInput?.hasSuffix(" ") ?? false {
-                textDocumentProxy.deleteBackward()
-            }
-            textDocumentProxy.insertText("\(cacheLetter)")
-            if !isPunctuation || [",", ":", ".", "?", "!"].contains(cacheLetter) {
+            let char = cacheLetter.first
+            let lastChar = textDocumentProxy.documentContextBeforeInput?.last
+            if char?.isLetter ?? false && (lastChar?.isLetter ?? false || punctShouldHaveSpaceAfter(lastChar)) {
                 textDocumentProxy.insertText(" ")
             }
+            textDocumentProxy.insertText("\(cacheLetter)")
             // Clear our the signal cache
             signalCache = []
         } else {
             textDocumentProxy.insertText(" ")
-           }
-         }
-
-    
-    override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
-    }
-   /*
-    override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
         }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
-    }*/
+    }
+
+    func lastChar() -> Character? {
+        return textDocumentProxy.documentContextBeforeInput?.last
+    }
+
+    @IBAction func deletePressed(button: UIButton) {
+        if signalCache.count > 0 {
+            // Remove last signal
+            signalCache.removeLast()
+            return
+        }
+        // if the last char is a letter, delete as many letters as available, and then delete a space if there is one
+        if lastChar()?.isLetter ?? false {
+            while lastChar()?.isLetter ?? false {
+                textDocumentProxy.deleteBackward()
+            }
+            if lastChar() == " " {
+                textDocumentProxy.deleteBackward()
+            }
+            return
+        }
+        
+        textDocumentProxy.deleteBackward()
+    }
 }
 
 private extension KeyboardViewController {

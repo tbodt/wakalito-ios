@@ -70,7 +70,7 @@ struct wakalitoData {
         [.comma, .comma]: "\"",
         [.vert, .circle, .dot]: "a",
         [.vert, .dot, .dot]: "a",
-        [.vert, .dot, .vert, .dot]: "a a ",
+        [.vert, .dot, .vert, .dot]: "a a",
         [.dot, .dot, .hor, .hor, .hor, .circle]: "akesi",
         [.circle, .hor, .hor, .hor, .dot, .dot]: "akesi",
         [.down, .up]: "ala",
