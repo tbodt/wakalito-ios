@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,11 +19,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nasin_Wakalito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-Ky-acw">
-                                <rect key="frame" x="20" y="20" width="374" height="48"/>
+                                <rect key="frame" x="16" y="20" width="288" height="72"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">ilo+sitelen ni li ken sitelen e nimi pi+__toki+pona
@@ -35,30 +35,25 @@ nasin li ni: o luka e linja sama ni: sina sitelen e nimi kepeken sitelen+pona</s
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="o lukin sitelen lon ni a!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-81-6lb">
-                                <rect key="frame" x="20" y="148" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xzh-TL-6Ym">
-                                <rect key="frame" x="0.0" y="190" width="414" height="546"/>
+                                <rect key="frame" x="0.0" y="186" width="320" height="294"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ijo" id="F3W-O8-np4" customClass="NasinCell" customModule="nasin_Wakalito" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="38.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="320" height="38.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F3W-O8-np4" id="zyE-qX-wsF">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="38.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="38.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-wD-NzV">
-                                                    <rect key="frame" x="20" y="3.9999999999999982" width="25" height="30.333333333333329"/>
+                                                    <rect key="frame" x="16" y="4" width="25" height="30.5"/>
                                                     <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-9l-nvp">
-                                                    <rect key="frame" x="369" y="3.9999999999999982" width="25" height="30.333333333333329"/>
+                                                    <rect key="frame" x="279" y="4" width="25" height="30.5"/>
                                                     <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -83,44 +78,43 @@ nasin li ni: o luka e linja sama ni: sina sitelen e nimi kepeken sitelen+pona</s
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="rSg-gK-wUx"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-Tb-TIp">
-                                <rect key="frame" x="20" y="76" width="374" height="52"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="pali tanjan[_lipu_ijo_kili_insa_pilin_ilo]   tankala+pona[_telo_olin_noka_yupekosi_utala]   tanjan[_tenpo_esun_pan_open] ">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="linja-sike"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-7k-DOK">
+                                <rect key="frame" x="16" y="100" width="65" height="36"/>
+                                <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="24"/>
+                                <state key="normal" title="nimi pi+__jan__pali"/>
+                                <connections>
+                                    <segue destination="gEb-Tu-eY9" kind="show" id="d2X-RR-uzd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sina ken sitelen lon ni a!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-P3-ZCU">
+                                <rect key="frame" x="16" y="144" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xzh-TL-6Ym" secondAttribute="bottom" id="4Eh-7j-VNp"/>
-                            <constraint firstItem="6Hn-81-6lb" firstAttribute="top" secondItem="1CK-Tb-TIp" secondAttribute="bottom" constant="20" id="8tn-SE-6JZ"/>
+                            <constraint firstItem="jqO-Ky-acw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5FZ-5f-Phr"/>
+                            <constraint firstItem="3Hu-7k-DOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Ix-N2-Bwq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jqO-Ky-acw" secondAttribute="trailing" constant="16" id="8e3-xc-cYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xzh-TL-6Ym" secondAttribute="trailing" id="9Hw-ob-nas"/>
                             <constraint firstItem="jqO-Ky-acw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AMd-b5-BVe"/>
-                            <constraint firstItem="xzh-TL-6Ym" firstAttribute="top" secondItem="6Hn-81-6lb" secondAttribute="bottom" constant="8" symbolic="YES" id="AWe-AY-u4g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pkq-P3-ZCU" secondAttribute="trailing" constant="16" id="B2T-kA-WpK"/>
                             <constraint firstItem="xzh-TL-6Ym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fkz-9a-FbT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CK-Tb-TIp" secondAttribute="trailing" constant="20" id="MrH-mp-paO"/>
-                            <constraint firstItem="1CK-Tb-TIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MvO-zN-g8l"/>
-                            <constraint firstItem="jqO-Ky-acw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RpV-bb-N9e"/>
-                            <constraint firstItem="6Hn-81-6lb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tm4-Wc-lu9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Hn-81-6lb" secondAttribute="trailing" constant="20" id="UMy-Wn-C1e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jqO-Ky-acw" secondAttribute="trailing" constant="20" id="cpN-wm-gSU"/>
-                            <constraint firstItem="1CK-Tb-TIp" firstAttribute="top" secondItem="jqO-Ky-acw" secondAttribute="bottom" constant="8" symbolic="YES" id="fLJ-CX-ssn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Hn-81-6lb" secondAttribute="trailing" constant="20" id="wji-pE-mvm"/>
+                            <constraint firstItem="pkq-P3-ZCU" firstAttribute="top" secondItem="3Hu-7k-DOK" secondAttribute="bottom" constant="8" symbolic="YES" id="OR7-2l-Rpi"/>
+                            <constraint firstItem="pkq-P3-ZCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wfn-QF-Ens"/>
+                            <constraint firstItem="xzh-TL-6Ym" firstAttribute="top" secondItem="pkq-P3-ZCU" secondAttribute="bottom" constant="8" symbolic="YES" id="okK-YA-n8H"/>
+                            <constraint firstItem="3Hu-7k-DOK" firstAttribute="top" secondItem="jqO-Ky-acw" secondAttribute="bottom" constant="8" symbolic="YES" id="uyD-mL-jg0"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="9BY-vS-khN" appends="YES" id="mK3-fz-nXe"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="pokiLukin" destination="6Hn-81-6lb" id="EwD-h2-ZIh"/>
+                        <outlet property="pokiLukin" destination="pkq-P3-ZCU" id="WDD-1A-pTv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -130,75 +124,79 @@ nasin li ni: o luka e linja sama ni: sina sitelen e nimi kepeken sitelen+pona</s
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="126.08695652173914" y="81.521739130434796"/>
+            <point key="canvasLocation" x="125.625" y="81.25"/>
         </scene>
-        <!--View Controller-->
+        <!--nasin pana-->
         <scene sceneID="6LO-qc-RFT">
             <objects>
-                <viewController storyboardIdentifier="nasin pana" id="CoS-wb-MUM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="nasin pana" title="nasin pana" modalPresentationStyle="formSheet" id="CoS-wb-MUM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfo-Xd-C5x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0I-MJ-bWP">
-                                <rect key="frame" x="20" y="20" width="374" height="646"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-W1-1EM">
+                                <rect key="frame" x="103" y="404" width="114" height="36"/>
+                                <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="24"/>
+                                <state key="normal" title="pona, mi pali e ni"/>
+                                <connections>
+                                    <action selector="dismiss" destination="CoS-wb-MUM" eventType="touchUpInside" id="6EC-bN-57g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-3E-cKl">
+                                <rect key="frame" x="16" y="20" width="288" height="208.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">sina wile kepeken ilo+mila pona a  nanpa+wan la o pana tawa ilo+sina.o pali e ni:
+                                        <string key="content">sina wile kepeken ilo+mi la pona a  nanpa+wan la o pana tawa ilo+sina. o pali e ni:
 
-o tawa ilo [</string>
+</string>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="linja-sike"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="o tawa ilo [">
+                                        <attributes>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Settings">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="], tawa lipu [">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="General">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="] tawa lipu [">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Keyboard">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="] tawa lipu [">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Keyboards">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
@@ -207,14 +205,12 @@ o tawa ilo [</string>
                                         <string key="content">].
 o kepeken nena [</string>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Add New Keyboard...">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
@@ -223,52 +219,91 @@ o kepeken nena [</string>
                                         <string key="content">].
 o kepeken nena [</string>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="nasin Wakalito">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="].">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="linja-sike"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-W1-1EM">
-                                <rect key="frame" x="136" y="674" width="142" height="42"/>
-                                <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="30"/>
-                                <state key="normal" title="pona, mi pali e ni"/>
-                                <connections>
-                                    <action selector="dismiss" destination="CoS-wb-MUM" eventType="touchUpInside" id="6EC-bN-57g"/>
-                                </connections>
-                            </button>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6UY-0o-Jcb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="r0I-MJ-bWP" firstAttribute="top" secondItem="6UY-0o-Jcb" secondAttribute="top" constant="20" id="2fa-c7-aRp"/>
-                            <constraint firstItem="r0I-MJ-bWP" firstAttribute="leading" secondItem="6UY-0o-Jcb" secondAttribute="leading" constant="20" id="4pf-1N-8lU"/>
-                            <constraint firstItem="TYa-W1-1EM" firstAttribute="top" secondItem="r0I-MJ-bWP" secondAttribute="bottom" constant="8" symbolic="YES" id="5DT-3F-Upa"/>
+                            <constraint firstItem="6UY-0o-Jcb" firstAttribute="trailing" secondItem="Xbr-3E-cKl" secondAttribute="trailing" constant="16" id="JqG-iE-gZ6"/>
                             <constraint firstItem="TYa-W1-1EM" firstAttribute="bottom" secondItem="6UY-0o-Jcb" secondAttribute="bottom" constant="-20" id="MGI-5W-ZVJ"/>
-                            <constraint firstItem="6UY-0o-Jcb" firstAttribute="trailing" secondItem="r0I-MJ-bWP" secondAttribute="trailing" constant="20" id="ySf-eQ-t4H"/>
+                            <constraint firstItem="Xbr-3E-cKl" firstAttribute="top" secondItem="6UY-0o-Jcb" secondAttribute="top" constant="20" id="O3h-N3-5Qb"/>
+                            <constraint firstItem="Xbr-3E-cKl" firstAttribute="leading" secondItem="6UY-0o-Jcb" secondAttribute="leading" constant="16" id="fzt-1u-IBP"/>
                             <constraint firstItem="TYa-W1-1EM" firstAttribute="centerX" secondItem="pfo-Xd-C5x" secondAttribute="centerX" id="ziN-u7-B7N"/>
                         </constraints>
                     </view>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMQ-qD-jkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905.625" y="82.5"/>
+            <point key="canvasLocation" x="903.75" y="81.25"/>
+        </scene>
+        <!--jan pali-->
+        <scene sceneID="VWN-Xa-ja3">
+            <objects>
+                <viewController title="jan pali" modalPresentationStyle="formSheet" id="gEb-Tu-eY9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Boe-vE-vfg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBB-gc-pOS">
+                                <rect key="frame" x="16" y="20" width="288" height="136"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">nasin litanjan[_lipu_ijo_kili_insa_pilin_ilo] 
+ilo li tankala+pona[_telo_olin_noka_yupekosi_utala]  tanjan[_tenpo_esun_pan_open]
+nasin+sitelen pi+__linja+sike li tanjewnikijetesantakalu[_lukin_insa_poka_anpa_monsi_nasa_kute_anpa]
+toki+pona li tanjan[_sona_olin_nasa_jasima_alasa]</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="linja-sike"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-7a-3l4">
+                                <rect key="frame" x="145" y="404" width="30" height="36"/>
+                                <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="24"/>
+                                <state key="normal" title="pona"/>
+                                <connections>
+                                    <action selector="dismiss" destination="CoS-wb-MUM" eventType="touchUpInside" id="dXD-3b-qfN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ecG-fn-42Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ecG-fn-42Q" firstAttribute="bottom" secondItem="hhf-7a-3l4" secondAttribute="bottom" constant="20" id="1iQ-aK-5Qn"/>
+                            <constraint firstItem="EBB-gc-pOS" firstAttribute="leading" secondItem="ecG-fn-42Q" secondAttribute="leading" constant="16" id="QrE-Oa-mqS"/>
+                            <constraint firstItem="EBB-gc-pOS" firstAttribute="top" secondItem="ecG-fn-42Q" secondAttribute="top" constant="20" id="ZDf-Ra-vVg"/>
+                            <constraint firstItem="hhf-7a-3l4" firstAttribute="centerX" secondItem="Boe-vE-vfg" secondAttribute="centerX" id="jtu-H9-3yb"/>
+                            <constraint firstItem="ecG-fn-42Q" firstAttribute="trailing" secondItem="EBB-gc-pOS" secondAttribute="trailing" constant="16" id="qkM-Dz-iuq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YM2-YL-uxl"/>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeW-Bh-xKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903.75" y="740"/>
         </scene>
     </scenes>
     <resources>
