@@ -284,7 +284,7 @@ toki+pona li tanjan[_sona_olin_nasa_jasima_alasa]</string>
                                 <fontDescription key="fontDescription" name="linja-sike" family="linja sike" pointSize="24"/>
                                 <state key="normal" title="pona"/>
                                 <connections>
-                                    <action selector="dismiss" destination="CoS-wb-MUM" eventType="touchUpInside" id="dXD-3b-qfN"/>
+                                    <action selector="dismiss" destination="gEb-Tu-eY9" eventType="touchUpInside" id="aaE-UU-yeJ"/>
                                 </connections>
                             </button>
                         </subviews>
