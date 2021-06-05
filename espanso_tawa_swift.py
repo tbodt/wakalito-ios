@@ -20,15 +20,16 @@ SITELEN_EN_KAMA = {
     'f': 'sound',
     'g': 'la',
 }
-# pakala pi jan Likipi pi nanpa 5.0: ale default.yml la, "g" li wile sama "lipu+namako", "r" li wile sama "la"
-SITELEN_EN_KAMA['g'] = 'box'
-SITELEN_EN_KAMA['r'] = 'la'
 
 with open(sys.argv[1]) as f:
     nasin_espanso = yaml.safe_load(f)
+pana_mute = set()
 for nasin in nasin_espanso['matches']:
     if nasin['replace'] == 'TEST': continue
+    if nasin.get('trigger') == '   ': continue
     for pana in nasin.get('triggers', [nasin.get('trigger')]):
+        if pana in pana_mute: print('duplicate!', [{", ".join("."+SITELEN_EN_KAMA[s] for s in pana)}], file=sys.stderr)
+        pana_mute.add(pana)
         kama = nasin['replace']
         kama_pona = kama.replace('"', '\\"')
         print(f'[{", ".join("."+SITELEN_EN_KAMA[s] for s in pana)}]: "{kama_pona}",')
