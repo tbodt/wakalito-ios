@@ -19,15 +19,15 @@ struct wakalitoData {
 
         case cl_br = "]"
         case poki = "⨆"
-        case circle = "o"
-        case box = "□"
+        case circle = "○"
+        case box = "▢"
         case down = "⌄"
         case up = "⌃"
 
         case colon = ":"
         case comma = ","
         case luka = "ᕄ"
-        case sound = "⟂"
+        case sound = "‴"
         case la = "ɔ"
 
         case unknown = "?"
@@ -60,7 +60,6 @@ struct wakalitoData {
     static let code: [[Key]: String] = [
         [.op_br, .cl_br]: ",os",
         [.op_br]: "[",
-        [.hor]: "-",
         [.cl_br]: "]",
         [.colon]: ":",
         [.dot, .dot]: ",",
@@ -70,6 +69,7 @@ struct wakalitoData {
         [.comma]: ",",
         [.vert, .vert, .dot]: "!",
         [.vert, .box, .down]: "mi sona ala",
+        [.hor]: "__",
         [.vert, .circle, .dot]: "a",
         [.vert, .dot, .dot]: "a",
         [.vert, .dot, .vert, .dot]: "a a",
@@ -212,6 +212,10 @@ struct wakalitoData {
         [.luka, .circle]: "pali",
         [.ike, .vert, .vert, .pona]: "palisa",
         [.pona, .vert, .vert, .ike]: "palisa",
+        [.ike, .vert, .pona, .vert]: "palisa",
+        [.pona, .vert, .ike, .vert]: "palisa",
+        [.vert, .ike, .vert, .pona]: "palisa",
+        [.vert, .pona, .vert, .ike]: "palisa",
         [.down, .down, .down]: "pan",
         [.luka, .sound]: "pana",
         [.sound, .luka]: "pana",
@@ -230,6 +234,7 @@ struct wakalitoData {
         [.box, .circle, .sound, .pona]: "pu",
         [.hor, .hor]: "sama",
         [.dot, .sound]: "seli",
+        [.sound, .dot]: "seli",
         [.vert, .hor, .vert, .vert, .vert]: "selo",
         [.hor, .vert, .vert, .vert, .vert]: "selo",
         [.vert, .vert, .hor, .vert, .vert]: "selo",
@@ -308,6 +313,23 @@ struct wakalitoData {
         [.circle, .down, .vert]: "oke",
         [.down, .vert, .circle]: "oke",
         [.vert, .ike]: "n",
+        [.circle, .poki]: "soko",
+        [.ike, .hor, .poki]: "soko",
+        [.vert, .dot, .vert]: "meso",
+        [.dot, .vert, .vert]: "meso",
+        [.vert, .vert, .up]: "epiku",
+        [.up, .vert, .vert]: "epiku",
+        [.circle, .sound, .hor]: "kokosila",
+        [.sound, .circle, .hor]: "kokosila",
+        [.ike, .pona, .ike, .dot]: "lanpan",
+        [.ike, .vert, .vert, .pona, .hor]: "misikeke",
+        [.pona, .vert, .vert, .ike, .hor]: "misikeke",
+        [.ike, .vert, .pona, .vert, .hor]: "misikeke",
+        [.pona, .vert, .ike, .vert, .hor]: "misikeke",
+        [.vert, .ike, .vert, .pona, .hor]: "misikeke",
+        [.vert, .pona, .vert, .ike, .hor]: "misikeke",
+        [.box, .down, .hor, .dot]: "ku",
+        [.box, .down, .hor, .circle, .sound, .pona]: "ku",
     ]
 
     static let codesForDisplay = code.map { ($0.1, $0.0) }.sorted {

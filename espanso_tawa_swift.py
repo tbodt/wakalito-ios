@@ -2,23 +2,23 @@ import yaml
 import sys
 
 SITELEN_EN_KAMA = {
-    '1': 'op_br',
-    '2': 'vert',
-    '3': 'hor',
-    '4': 'pona',
+    '1': 'la',
+    '2': 'hor',
+    '3': 'dot',
+    '4': 'down',
     '5': 'ike',
-    '6': 'dot',
-    'q': 'cl_br',
-    'w': 'poki',
+    '6': 'op_br',
+    'q': 'luka',
+    'w': 'vert',
     'e': 'circle',
-    'r': 'box',
-    't': 'down',
-    'y': 'up',
+    'r': 'up',
+    't': 'pona',
+    'y': 'cl_br',
     'a': 'colon',
-    's': 'comma',
-    'd': 'luka',
+    's': 'poki',
+    'd': 'box',
     'f': 'sound',
-    'g': 'la',
+    'g': 'comma',
 }
 
 with open(sys.argv[1]) as f:
