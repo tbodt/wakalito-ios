@@ -28,6 +28,7 @@ for nasin in nasin_espanso['matches']:
     if nasin['replace'] == 'TEST': continue
     if nasin.get('trigger') == '   ': continue
     for pana in nasin.get('triggers', [nasin.get('trigger')]):
+        if pana.isspace(): continue
         if pana in pana_mute: print('duplicate!', [{", ".join("."+SITELEN_EN_KAMA[s] for s in pana)}], file=sys.stderr)
         pana_mute.add(pana)
         kama = nasin['replace']
